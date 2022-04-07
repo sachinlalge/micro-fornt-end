@@ -1,0 +1,19 @@
+<mat-toolbar class="border-bottom">
+    <span>Super Admin</span>
+</mat-toolbar>
+
+<mat-drawer-container class="h-100">
+  <mat-drawer mode="side" opened class="p-2">
+    <ul class="list-unstyled">
+      <li class="px-4 py-2 border-bottom">Setting</li>
+      <li class="px-4 py-2 border-bottom" (click)="learnTab()">Learning</li>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<ng-container>
+    <app-learning></app-learning>
+</ng-container>
